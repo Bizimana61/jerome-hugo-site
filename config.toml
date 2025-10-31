@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "Jerome Bizimana"
 publishDir = "public"
 
+[author]
+  name = "Jerome Bizimana"
+  email = "Jeromebizimana2027@u.northwestern.edu"
+
 [params]
   author = "Jerome Bizimana"
   description = "Junior at Northwestern University studying Computer Science. Software engineering, UI/UX, Security design and foundations."
