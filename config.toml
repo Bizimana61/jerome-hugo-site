@@ -3,14 +3,15 @@ languageCode = "en-us"
 title = "Jerome Bizimana"
 publishDir = "public"
 
-[author]
-  name = "Jerome Bizimana"
-  email = "Jeromebizimana2027@u.northwestern.edu"
-
 [params]
-  author = "Jerome Bizimana"
+  # Author information: use a params subtable to avoid deprecated top-level author key
+  [params.author]
+    name = "Jerome Bizimana"
+    email = "Jeromebizimana2027@u.northwestern.edu"
+
+  authorName = "Jerome Bizimana"
   description = "Junior at Northwestern University studying Computer Science. Software engineering, UI/UX, Security design and foundations."
-  email = "Jeromebizimana2027@u.northwestern.edu"
+  # use params.author.email instead of a duplicate params.email
   phone = "(773)-564-3982"
   location = "Evanston, IL"
   linkedin = "https://www.linkedin.com/in/jerome-bizimana"
