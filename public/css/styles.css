@@ -1,0 +1,33 @@
+/* Sidebar layout inspired by academic personal sites */
+:root{
+	--accent:#0a2540;
+	--muted:#6b7280;
+	--bg:#f8fafc;
+	--paper:#ffffff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#111; background:var(--bg)}
+.site-root{display:flex; min-height:100vh}
+.sidebar{width:260px; background:var(--accent); color:#fff; padding:28px 18px; position:sticky; top:0; height:100vh}
+.sidebar-inner{display:flex; flex-direction:column; gap:16px}
+.profile{width:96px; height:96px; border-radius:999px; display:block; margin-bottom:6px; background:#fff}
+.name{font-size:1.25rem; margin:0}
+.tagline{font-size:0.9rem; color:rgba(255,255,255,0.9)}
+.side-nav{display:flex; flex-direction:column; gap:8px; margin-top:12px}
+.side-link{color:#dbeafe; text-decoration:none; padding:6px 8px; border-radius:6px}
+.side-link:hover{background:rgba(255,255,255,0.05)}
+.contact{margin-top:auto; font-size:0.85rem; color:rgba(255,255,255,0.9)}
+.contact .social{margin-top:8px; display:flex; gap:8px}
+.contact a{color:#fff; text-decoration:underline}
+.main-content{flex:1; padding:40px; max-width:980px}
+.main-content h1{font-size:2rem; margin-top:0}
+.main-content img{max-width:220px; border-radius:8px; margin:12px 0}
+.post-meta{color:var(--muted); font-size:0.92rem}
+.site-footer{border-top:1px solid #e6eef6; margin-top:48px; padding-top:18px; color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+	.site-root{flex-direction:column}
+	.sidebar{width:100%; height:auto; position:relative}
+	.main-content{padding:20px}
+}

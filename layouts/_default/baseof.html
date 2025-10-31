@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="site-root">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <a class="brand" href="/">
+          <img class="profile" src="/images/cs-logo.svg" alt="Jerome Bizimana">
+        </a>
+        <h1 class="name">{{ .Site.Title }}</h1>
+        <p class="tagline">{{ .Site.Params.description }}</p>
+
+        <nav class="side-nav">
+          {{ range .Site.Menus.main }}
+            <a class="side-link" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+        </nav>
+
+        <div class="contact">
+          <div>{{ .Site.Params.email }}</div>
+          <div>{{ .Site.Params.phone }}</div>
+          <div>{{ .Site.Params.location }}</div>
+          <div class="social">
+            <a href="{{ .Site.Params.linkedin }}">LinkedIn</a>
+            <a href="{{ .Site.Params.github }}">GitHub</a>
+            <a href="{{ .Site.Params.instagram }}">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      {{ block "main" . }}{{ end }}
+      <footer class="site-footer">&copy; {{ now.Year }} {{ .Site.Params.author }} — Built with Hugo</footer>
+    </main>
+  </div>
+</body>
+</html>

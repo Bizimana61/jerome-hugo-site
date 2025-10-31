@@ -1,0 +1,36 @@
+baseURL = "https://jerome-bizimana.github.io/"
+languageCode = "en-us"
+title = "Jerome Bizimana"
+publishDir = "public"
+
+[params]
+  author = "Jerome Bizimana"
+  description = "Junior at Northwestern University studying Computer Science. Software engineering, UI/UX, Security design and foundations."
+  email = "Jeromebizimana2027@u.northwestern.edu"
+  phone = "(773)-564-3982"
+  location = "Evanston, IL"
+  linkedin = "https://www.linkedin.com/in/jerome-bizimana"
+  github = "https://github.com/Bizimana61"
+  instagram = "https://www.instagram.com/meroje_jb"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 4

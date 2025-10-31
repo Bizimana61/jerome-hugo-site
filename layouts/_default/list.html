@@ -1,0 +1,21 @@
+{{ define "main" }}
+  {{/* If the section has its own content (_index.md) render that. Otherwise show the section title. */}}
+  {{ if .Content }}
+    <div class="section-content">{{ .Content }}</div>
+  {{ else }}
+    <h1>{{ .Title }}</h1>
+    {{ if .Description }}<p class="lead">{{ .Description }}</p>{{ end }}
+  {{ end }}
+
+  {{ if gt (len .Pages) 0 }}
+    <h2>Entries</h2>
+    <ul>
+      {{ range .Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
