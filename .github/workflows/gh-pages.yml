@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+# Give the workflow permission to push to the repository (needed for GITHUB_TOKEN write access)
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
