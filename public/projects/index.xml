@@ -1,5 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Jerome Bizimana</title><link>https://jerome-bizimana.github.io/projects/</link><description>Recent content in Projects on Jerome Bizimana</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>Jeromebizimana2027@u.northwestern.edu (Jerome Bizimana)</managingEditor><webMaster>Jeromebizimana2027@u.northwestern.edu (Jerome Bizimana)</webMaster><lastBuildDate>Thu, 30 Oct 2025 12:00:00 +0000</lastBuildDate><atom:link href="https://jerome-bizimana.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Cursor IDE Redesign — HCI Project</title><link>https://jerome-bizimana.github.io/projects/classroom-tools/</link><pubDate>Thu, 30 Oct 2025 12:00:00 +0000</pubDate><author>Jeromebizimana2027@u.northwestern.edu (Jerome Bizimana)</author><guid>https://jerome-bizimana.github.io/projects/classroom-tools/</guid><description>Cursor IDE Redesign — HCI Project Project overview
-This project represents a comprehensive redesign of the Cursor IDE, developed as part of an HCI (Human-Computer Interaction) class. Through rigorous needfinding, prototyping, and user testing methodologies, we identified and addressed critical usability gaps that hinder Cursor&amp;rsquo;s potential as an AI peer-programmer tool.
-Repository: https://github.com/Bizimana61/Cursor-Redesign
-Research objectives Our research focused on improving three core areas:
-AI collaboration — enhancing the interaction between developers and AI assistants Version control — streamlining git workflows and commit management Workflow efficiency — optimizing the developer experience for productivity Design process Needfinding</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Jerome Bizimana</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Jerome Bizimana</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>Jeromebizimana2027@u.northwestern.edu (Jerome Bizimana)</managingEditor>
+    <webMaster>Jeromebizimana2027@u.northwestern.edu (Jerome Bizimana)</webMaster>
+    <lastBuildDate>Thu, 30 Oct 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cursor IDE Redesign — HCI Project</title>
+      <link>http://localhost:1313/projects/classroom-tools/</link>
+      <pubDate>Thu, 30 Oct 2025 12:00:00 +0000</pubDate><author>Jeromebizimana2027@u.northwestern.edu (Jerome Bizimana)</author>
+      <guid>http://localhost:1313/projects/classroom-tools/</guid>
+      <description>Cursor IDE Redesign — HCI Project Project overview&#xA;This project represents a comprehensive redesign of the Cursor IDE, developed as part of an HCI (Human-Computer Interaction) class. Through rigorous needfinding, prototyping, and user testing methodologies, we identified and addressed critical usability gaps that hinder Cursor&amp;rsquo;s potential as an AI peer-programmer tool.&#xA;Repository: https://github.com/Bizimana61/Cursor-Redesign&#xA;Research objectives Our research focused on improving three core areas:&#xA;AI collaboration — enhancing the interaction between developers and AI assistants Version control — streamlining git workflows and commit management Workflow efficiency — optimizing the developer experience for productivity Design process Needfinding</description>
+    </item>
+  </channel>
+</rss>

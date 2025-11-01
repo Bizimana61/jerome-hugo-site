@@ -11,7 +11,11 @@
     <aside class="sidebar">
       <div class="sidebar-inner">
         <a class="brand" href="/">
-          <img class="profile" src="/images/cs-logo.svg" alt="Jerome Bizimana">
+          {{ with .Site.Params.profile_image }}
+            <img class="profile" src="{{ . }}" alt="{{ .Site.Title }}">
+          {{ else }}
+            <img class="profile" src="/images/cs-logo.svg" alt="{{ .Site.Title }}">
+          {{ end }}
         </a>
         <h1 class="name">{{ .Site.Title }}</h1>
         <p class="tagline">{{ .Site.Params.description }}</p>
@@ -23,7 +27,7 @@
         </nav>
 
         <div class="contact">
-          <div>{{ .Site.Params.email }}</div>
+          <div>{{ with .Site.Params.author }}{{ .email }}{{ else }}{{ "" }}{{ end }}</div>
           <div>{{ .Site.Params.phone }}</div>
           <div>{{ .Site.Params.location }}</div>
           <div class="social">
@@ -37,7 +41,7 @@
 
     <main class="main-content">
       {{ block "main" . }}{{ end }}
-      <footer class="site-footer">&copy; {{ now.Year }} {{ .Site.Params.author }} — Built with Hugo</footer>
+  <footer class="site-footer">&copy; {{ now.Year }} {{ with .Site.Params.author }}{{ .name }}{{ else }}{{ .Site.Title }}{{ end }} — Built with Hugo</footer>
     </main>
   </div>
 </body>

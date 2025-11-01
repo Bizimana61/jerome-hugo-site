@@ -11,6 +11,8 @@ publishDir = "public"
 
   authorName = "Jerome Bizimana"
   description = "Junior at Northwestern University studying Computer Science. Software engineering, UI/UX, Security design and foundations."
+  # Path to a profile image (place the file at static/images/IMG_3900.jpeg)
+  profile_image = "/images/IMG_3900.jpeg"
   # use params.author.email instead of a duplicate params.email
   phone = "(773)-564-3982"
   location = "Evanston, IL"
