@@ -31,5 +31,3 @@ Deploying to GitHub Pages
 2. Update `baseURL` in `config.toml` to the actual GitHub Pages URL (e.g. `https://<username>.github.io/<repo>/`).
 3. Pushing to `main` will trigger the GitHub Actions workflow at `.github/workflows/gh-pages.yml` which builds and publishes `public/`.
 
-If you'd like, I can initialize the git repo here and push to GitHub for you — say the word and provide the repo name and whether you want it public or private.
-my picture icon: ![alt text](IMG_3900.jpeg)
